@@ -43,8 +43,8 @@ legend('topright',
        bty="n"
 )
 
-axis(side=1, at=seq(1915,2015,1),lwd=1, las=1)
-axis(side=1, at=seq(1915,2015,5),lwd=2, labels=FALSE)
+axis(side=1, at=seq(1915,2015,1),lwd=1, las=1, labels=FALSE)
+axis(side=1, at=seq(1915,2015,5),lwd=2)
 axis(side=2, at=seq(0,3,.25), lwd=1, las = 1)
 
 ## END ##
