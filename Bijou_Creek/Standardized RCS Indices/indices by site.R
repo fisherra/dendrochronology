@@ -10,10 +10,12 @@
 ## Load Sources
 indices <- standardized_rcs_indices
 
-
+## Clear old plots if necissary - 
+dev.off()
 
 ## BIJOU BASIN INDICES #################################
 
+par(mar=c(5,4,4,10), xpd=FALSE)
 plot(indices$year, indices$bb_avg,
      main = "Bijou Basin Master RCS Indices",
      xlab="Year", ylab = "Index Value",
@@ -24,8 +26,8 @@ plot(indices$year, indices$bb_avg,
      col = "violet"
 )
 
-abline(h=1, col="black")
-lines(lowess(indices$year, indices$bb_avg, f = 0.3), col="violet", lwd=7) # lowess line (x,y)
+abline(h=1, col="black", lty='dotted')
+lines(lowess(indices$year, indices$bb_avg, f = 0.3), col="violet", lty='twodash', lwd=2) # lowess line (x,y)
 
 axis(side=1, at=seq(1820,2015,1),lwd=1, las=1, labels=FALSE)
 axis(side=1, at=seq(1820,2015,5),lwd=2)
@@ -34,6 +36,7 @@ axis(side=2, at=seq(0,2,0.5), lwd=1, las = 1)
 
 ## BRADBURY INDICES ###################################
 
+par(mar=c(5,4,4,10), xpd=FALSE)
 plot(indices$year, indices$b3_avg,
      main = "Bradbury Master RCS Indices",
      xlab="Year", ylab = "Index Value",
@@ -44,11 +47,8 @@ plot(indices$year, indices$b3_avg,
      col = "turquoise"
 )
 
-abline(h=1, col="black")
-
-#abline(lm(indices$b3_avg~indices$year), col="turquoise", lwd=2)
-#lines(lowess(indices$year, indices$bb_avg), col="violet", lwd=2) # lowess line (x,y)
-lines(lowess(indices$year, indices$b3_avg, f = 0.3), col="turquoise", lwd=7) # lowess line (x,y)
+abline(h=1, col="black", lty='dotted')
+lines(lowess(indices$year, indices$b3_avg, f = 0.3), col="turquoise", lty='twodash', lwd=2) # lowess line (x,y)
 
 axis(side=1, at=seq(1820,2015,1),lwd=1, las=1, labels=FALSE)
 axis(side=1, at=seq(1820,2015,5),lwd=2)
@@ -56,6 +56,8 @@ axis(side=2, at=seq(0,2,0.5), lwd=1, las = 1)
 
 ## MaClennon INDICES ###############################################
 
+
+par(mar=c(5,4,4,10), xpd=FALSE)
 plot(indices$year, indices$b12_avg,
      main = "MaClennon Master RCS Indices",
      xlab="Year", ylab = "Index Value",
@@ -65,18 +67,17 @@ plot(indices$year, indices$b12_avg,
      pch=20, cex=1.5,
      col = "seagreen3"
 )
-
-lines(lowess(indices$year, indices$b12_avg, f = 0.3), col="seagreen3", lwd=7) # lowess line (x,y)
-abline(h=1, col="black")
+abline(h=1, col="black", lty='dotted')
+lines(lowess(indices$year, indices$b12_avg, f = 0.3), col="seagreen3", lty='twodash', lwd=2) # lowess line (x,y)
 
 axis(side=1, at=seq(1820,2015,1),lwd=1, las=1, labels=FALSE)
 axis(side=1, at=seq(1820,2015,5),lwd=2)
 axis(side=2, at=seq(0,2,0.5), lwd=1, las = 1)
 
 
-
 ## HUTTO INDICES #############################################
 
+par(mar=c(5,4,4,10), xpd=FALSE)
 plot(indices$year, indices$b9_avg,
      main = "Hutto Master RCS Indices",
      xlab="Year", ylab = "Index Value",
@@ -87,8 +88,8 @@ plot(indices$year, indices$b9_avg,
      col = "slateblue"
 )
 
-lines(lowess(indices$year, indices$b9_avg, f = 0.3), col="slateblue", lwd=7) # lowess line (x,y)
-abline(h=1, col="black")
+abline(h=1, col="black", lty='dotted')
+lines(lowess(indices$year, indices$b9_avg, f = 0.3), col="slateblue", lty='twodash', lwd=2) # lowess line (x,y)
 
 axis(side=1, at=seq(1820,2015,1),lwd=1, las=1, labels=FALSE)
 axis(side=1, at=seq(1820,2015,5),lwd=2)

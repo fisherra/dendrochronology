@@ -1,0 +1,43 @@
+To DO 
+
+Climate - 
+- Figure out the exact source for the R package pdsi (sc) calculations
+- Figure out what AWS means and how to calculated it 
+- Clean up Climate Methods
+- Clean up Weather Station Regressions Folder
+- commit everything to github
+
+
+Indices - Ag Influence 
+- Conduct this study
+
+
+
+Indices - Depth to Water 
+- Correlate the crude depth to water & indices by individual sites
+- Clean up the D2W text document
+- commit everything to github
+
+
+
+Indices - Old Establishment
+- Correlate old establishment chronologies (by site) to climate
+- clean up the text document 
+- commit everything to github
+
+
+
+Indices - Standard
+- save the unsmoothed rcs plot to the our drive
+- create a plot that takes a closer look at the last 60 years of indices
+- correlate the indices to precip, temperature, pdsi
+- clean up the text document
+- save to github
+
+
+Establishment Year - 
+- Create the plot the way I want it to look
+- Make the text document and save the proper version to github
+
+
+
