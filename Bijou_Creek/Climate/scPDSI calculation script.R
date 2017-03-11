@@ -14,7 +14,7 @@
 clim <- as.data.frame(byers_scPDSI_input)
 
 ## run the program 
-palmer <- pdsi( 12, 40, clim, 1932 , 2014, mode="scpdsi")
+palmer <- pdsi( 3, 40, clim, 1932 , 2014, mode="scpdsi")
 
 ## Export the results 
 #write.csv(palmer, file = "scPDSI output", sep = " ")
